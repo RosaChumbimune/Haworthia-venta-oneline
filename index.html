@@ -5,135 +5,161 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+<!-- normalize -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+<!-- link css -->
+    <link rel="stylesheet" href="./index.css/index.css">
+<!-- favicon -->
+    <link rel="shortcut icon" href="2030776.ico" type="image/x-icon">
     <title>Haworthia</title>
 </head>
 
-<body>
-    <header>
-        <section>
-            <nav>
-                <a href="#">
+<body class="body">
+    <header class="header">
+        <section class="header-nav__container">
+            <nav class="header-nav__bar content">
+                <a href="#" class="header-nav__logo-container">
                     <img src="https://cdn0.iconfinder.com/data/icons/nature-life-line-art/128/succulent-haworthia-cooperi-ol-512.png"
-                        alt="logo" width="40px">
+                        alt="logo" width="40px" class="header-nav__logo">
                 </a>
 
-                <ul>
-                    <li>
-                        <a href="#">Nosotros</a>
+                <ul class="header-nav__links-list">
+                    <li class="header-nav__link-element">
+                        <a href="#" class="header-nav__link">Nosotros</a>
+                    </li >
+                    <li class="header-nav__link-element">
+                        <a href="#galery" class="header-nav__link">Galeria</a>
                     </li>
-                    <li>
-                        <a href="#">Galeria</a>
+                    <li class="header-nav__link-element">
+                        <a href="#" class="header-nav__link">Blog</a>
                     </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacto</a>
+                    <li class="header-nav__link-element">
+                        <a href="#" class="header-nav__link">Contacto</a>
                     </li>
                 </ul>
             </nav>
         </section>
 
     </header>
-    <main>
-        <article>
-            <h1>Haworthia</h1>
-            <h2>Agrega algo de color y vida a tus espacios favoritos</h2>
-            <p> Necessitatibus est ullam quo iste deserunt totam, mollitia impedit, quam quod
+    <main class="main">
+        <article class="description-container">
+            <h1 class="description__title">Haworthia</h1>
+            <h2 class="description__subtitle">Agrega algo de color y vida a tus espacios favoritos</h2>
+            <p class="description__paragraph"> Necessitatibus est ullam quo iste deserunt totam, mollitia impedit, quam quod
                 unde aliq<br>
                 uam ut cumque aut incidunt vitae laborum debitis sed?Lorem ipsum dolor sit amet consectetur<br>
                 adipisicing elit. Dolorum officia tenetur nulla facilis tempore .</p>
-            <div>
-                <a href="#">Nuestra historia</a>
+            <div class="description__button-container">
+                <a href="#" class="description__button">Nuestra historia</a>
             </div>
         </article>
-        <article>
-            <section>
+        <article class="cards">
+            <section class="cards-container">
 
-                <article>
-                    <h2>Atención al cliente</h2>
-                    <p>Contamos con un equipo dedicado de especialistas ,disponible cuando más
+                <article class="card-content">
+                    <div class="card__icon__service">
+                        <figure class="card__icon-service-container">
+                            <img src="./img/2787487.png" alt="iconService" class="card__icon-service">
+                        </figure>
+                    </div>
+                    <h2 class="card__title">Atención al cliente</h2>
+                    <p class="card__description">Contamos con un equipo dedicado de especialistas ,disponible cuando más
                         lo necesite .</p>
                 </article>
 
-                <article>
-                    <h2>Reciclamos</h2>
-                    <p>Empleamos metodos sotenibles en nuestra linea de suministros.</p>
+                <article class="card-content">
+                    <div class="card__icon__service">
+                        <figure class="card__icon-service-container">
+                            <img src="./img/2907282.png" alt="iconRecycle" class="card__icon-service">
+                        </figure>
+                    </div>
+                    <h2 class="card__title">Reciclamos</h2>
+                    <p class="card__description">Empleamos metodos sotenibles en nuestra linea de suministros.</p>
                 </article>
 
-                <article>
-                    <h2>Delivery</h2>
-                    <p>Envios a todo el país ,rastrea tu pedido con nosotros.</p>
+                <article class="card-content">
+                    <div class="card__icon__service">
+                        <figure class="card__icon-service-container">
+                            <img src="./img/3143190.png" alt="iconDelivery" class="card__icon-service">
+                        </figure>
+                    </div>
+                    <h2 class="card__title">Delivery</h2>
+                    <p class="card__description">Envios a todo el país ,rastrea tu pedido con nosotros.</p>
                 </article>
 
             </section>
         </article>
     </main>
 
-    <section>
-        <div>
-            <section>
-                <h3>Galeria</h3>
+    <section class="Galery" id="galery">
+        <div class="Galery__sections-container">
+            <section class="Galery__title-container">
+                <h3 class="Galery__title">Galeria</h3>
             </section>
-            <article>
-                <section>
-                    <figure>
-                        <img src="https://cdn.shopify.com/s/files/1/0050/6150/9155/products/Crassula-hobbit-P15_300x.jpg?v=1627570725"
-                            alt="Crassula-hobbit" />
+            <article class="Galery__products-container">
+                <section class="Galery__product-content">
+                    <figure class="Galery__product-image-container">
+                        <img src="https://cdn.shopify.com/s/files/1/0050/6150/9155/products/Crassula-hobbit-P15_300x.jpg?v=1627570725" 
+                            alt="Crassula-hobbit" class="Galery__product-image"/>
                     </figure>
-                    <div>
-                        <h3>Crassula Hobbit</h3>
-                        <h4>$20</h4>
+                    <div class="Galery__product-information">
+                        <h3 class="Galery__product-name">Crassula Hobbit</h3>
+                        <h4 class="Galery__product-price">$20</h4>
                     </div>
                 </section>
-                <section>
-                    <figure>
+                <section class="Galery__product-content">
+                    <figure class="Galery__product-image-container">
                         <img src="https://cdn.shopify.com/s/files/1/0050/6150/9155/products/Epiphyllum-anguliger-P21-60cm_300x.jpg?v=1627570625"
-                            alt="Epiphyllum-anguliger" />
+                            alt="Epiphyllum-anguliger" class="Galery__product-image"/>
                     </figure>
-                    <div>
-                        <h3>Epiphyllum Anguliger</h3>
-                        <h4>$20</h4>>
+                    <div class="Galery__product-information">
+                        <h3 class="Galery__product-name">Epiphyllum Anguliger</h3>
+                        <h4 class="Galery__product-price">$20</h4>>
                     </div>
                 </section>
-                <section>
-                    <figure>
+                <section class="Galery__product-content">
+                    <figure class="Galery__product-image-container">
                         <img src="https://cdn.shopify.com/s/files/1/0050/6150/9155/products/Sansevieria-metallica-75cmP26_300x.jpg?v=1627571516"
-                            alt="Sansevieria-metallica" />
+                            alt="Sansevieria-metallica" class="Galery__product-image" />
                     </figure>
-                    <div>
-                        <h3>Sansevieria Metallica</h3>
-                        <h4>$20</h4>
+                    <div class="Galery__product-information">
+                        <h3 class="Galery__product-name">Sansevieria Metallica</h3>
+                        <h4 class="Galery__product-price">$20</h4>
                     </div>
                 </section>
-                <section>
-                    <figure>
+                <section class="Galery__product-content">
+                    <figure class="Galery__product-image-container">
                         <img src="https://cdn.shopify.com/s/files/1/0050/6150/9155/products/Epipremnum-golden-pothos-P12_300x.jpg?v=1627570673"
-                            alt="Epipremnum-golden-pothos" />
+                            alt="Epipremnum-golden-pothos" class="Galery__product-image"/>
                     </figure>
-                    <div>
-                        <h3>Epipremnum Golden Pothos</h3>
-                        <h4>$20</h4>
+                    <div class="Galery__product-information">
+                        <h3 class="Galery__product-name">Epipremnum Golden Pothos</h3>
+                        <h4 class="Galery__product-price">$20</h4>
                     </div>
                 </section>
-                <section>
-                    <figure>
+                <section class="Galery__product-content">
+                    <figure class="Galery__product-image-container">
                         <img src="https://cdn.shopify.com/s/files/1/0050/6150/9155/products/begonia_maculata_wightii_spotted_50cm_300x.jpg?v=1627571551"
-                            alt="begonia-maculata" />
+                            alt="begonia-maculata" class="Galery__product-image"/>
                     </figure>
-                    <div>
-                        <h3>Begonia Maculata</h3>
-                        <h4>$20</h4>
+                    <div class="Galery__product-information">
+                        <h3 class="Galery__product-name">Begonia Maculata</h3>
+                        <h4 class="Galery__product-price">$20</h4>
                     </div>
                 </section>
-                <section>
-                    <figure>
+                <section class="Galery__product-content">
+                    <figure class="Galery__product-image-container">
                         <img src="https://cdn.shopify.com/s/files/1/0050/6150/9155/products/Monstera_adansonii_P12_30cm__15_300x.jpg?v=1627570"
-                            alt="Monstera-adansonii" />
+                            alt="Monstera-adansonii" class="Galery__product-image"/>
                     </figure>
-                    <div>
-                        <h3>Monstera Adansonii</h3>
-                        <h4>$20</h4>
+                    <div class="Galery__product-information">
+                        <h3 class="Galery__product-name">Monstera Adansonii</h3>
+                        <h4 class="Galery__product-price">$20</h4>
                     </div>
                 </section>
             </article>
@@ -143,41 +169,41 @@
     </section>
 
 
-    <section>
-        <article>
-            <h3>SUSCRIBETE a <br>nuestro Newsletter</h3>
-            <h4>Accede al mejor contenido</h4>
-            <form>
-                <div>
-                    <label>Correo</label>
-                    <input type="email" id="email" placeholder="Correo electrónico" required>
+    <section class="newsletter">
+        <article class="newsletter__subscribe-container">
+            <h3 class="newsletter__title">SUSCRIBETE a <br>nuestro Newsletter</h3>
+            <h4 class="newsletter__subtitle">Accede al mejor contenido</h4>
+            <form class="newsletter-subscribe-form">
+                <div class="newsletter-subscribe__form">
+                    <label class="newsletter__form-title">Correo</label>
+                    <input class="newsletter__form-box" type="email" id="email" placeholder="Correo electrónico" required>
                 </div>
-                <div>
-                    <input type="button" value="Suscribirse" />
+                <div class="newsletter__form-button-container">
+                    <input class="newsletter__form-button" type="button" value="Suscribirse" />
                 </div>
             </form>
         </article>
     </section>
 
-    <footer>
-        <section>
-            <a href="https://www.instagram.com/">
-                <img src="https://cdn-icons-png.flaticon.com/512/725/725278.png" alt="Instagram" width="30px" />
+    <footer class="footer">
+        <section class="footer__links-container">
+            <a href="https://www.instagram.com/" class="footer__link">
+                <img src="https://cdn-icons-png.flaticon.com/512/725/725278.png" alt="Instagram" width="30px" class="footer__link-image"/>
             </a>
-            <a href="https://www.linkedin.com/login/es">
-                <img src="https://cdn-icons-png.flaticon.com/512/725/725337.png" alt="Linkedin" width="30px" />
+            <a href="https://www.linkedin.com/login/es" class="footer__link">
+                <img src="https://cdn-icons-png.flaticon.com/512/725/725337.png" alt="Linkedin" width="30px" class="footer__link-image"/>
             </a>
-            <a href="https://web.whatsapp.com/">
-                <img src="https://cdn-icons-png.flaticon.com/512/1383/1383269.png" alt="Whatsapp" width="30px" />
+            <a href="https://web.whatsapp.com/" class="footer__link">
+                <img src="https://cdn-icons-png.flaticon.com/512/1383/1383269.png" alt="Whatsapp" width="30px" class="footer__link-image"/>
             </a>
-            <a href="https://www.facebook.com/">
-                <img src="https://cdn-icons-png.flaticon.com/512/725/725289.png" alt="Facebook" width="30px" />
+            <a href="https://www.facebook.com/" class="footer__link">
+                <img src="https://cdn-icons-png.flaticon.com/512/725/725289.png" alt="Facebook" width="30px" class="footer__link-image"/>
             </a>
-            <a href="https://www.pinterest.es/">
-                <img src="https://cdn-icons-png.flaticon.com/512/725/725296.png" alt="Pinterest" width="30px" />
+            <a href="https://www.pinterest.es/" class="footer__link">
+                <img src="https://cdn-icons-png.flaticon.com/512/725/725296.png" alt="Pinterest" width="30px" class="footer__link-image"/>
             </a>
         </section>
-        <h4>Derechos Reservados &COPY; </h4>
+        <h4 class="rights">Derechos Reservados &COPY; </h4>
     </footer>
 
 </body>
