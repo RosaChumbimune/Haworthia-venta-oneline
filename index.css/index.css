@@ -1,0 +1,376 @@
+:root {
+  --theme-color: rgb(235, 235, 235);
+  --theme-color-second: rgb(209, 240, 209);
+  --card-theme-color1: rgb(108, 201, 115);
+  --card-theme-color2: rgb(119, 194, 169);
+  --card-theme-color3: rgb(127, 168, 129);
+  --secondary-text-color: rgb(255, 248, 248);
+  --button-color: rgb(11, 107, 70);
+
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeInDown {
+  to {
+    margin-top: 0;
+  }
+  from {
+    margin-bottom: 80%;
+  }
+}
+
+.body {
+  font-family: "Domine", serif;
+  background-color: var(--theme-color);
+  min-height: 200vh;
+}
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(218, 250, 215, 0.507);
+}
+.header-nav__container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(51, 48, 48, 0.651);
+  backdrop-filter: blur(10px);
+}
+
+.header-nav__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+.header-nav__logo-container {
+  display: flex;
+  border: none;
+}
+.header-nav__logo {
+  width: 40px;
+}
+.header-nav__links-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1rem;
+  width: 100%;
+}
+.header-nav__link-element {
+  text-decoration: none;
+}
+.header-nav__link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.25s;
+  color: var(--prymary-text-color);
+}
+
+.header-nav__link:hover {
+  color: rgb(27, 27, 27);
+  border-bottom: 0.15rem solid rgb(14, 49, 32);
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* max-width: 100vh; */
+  gap: 2rem;
+}
+.description-container {
+  background-image: url(https://cdn.shopify.com/s/files/1/0150/6262/articles/blog_the-sill_haworthia-succulent-zebra-plant_2_4_1200x.jpg?v=1565209437);
+  background-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
+  /* margin-top: 4.5rem; */
+}
+.description-background-section {
+  padding: 1rem 0;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(242, 254, 243, 0.836) 0%,
+    rgba(0, 212, 255, 0) 100%
+  );
+}
+.description__title {
+  font-weight: 900;
+  font-size: 3.5rem;
+  font-family: "Playfair Display SC", serif;
+  padding: 2rem 1rem;
+
+  animation: fadeInDown 1s;
+  /* margin-top: 4rem; */
+}
+.description__title::before {
+  content: var(--title);
+  position: absolute;
+  transform: scale(1.1);
+  filter: blur(1rem);
+}
+.description__title::after {
+  content: var(--title);
+  position: absolute;
+  top: 20%;
+  left: 1.5rem;
+  filter: blur(0.25rem);
+  transform: rotatex(120deg);
+}
+.description__subtitle {
+  animation: fadeInDown 2s;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+.description__paragraph {
+  padding: 2rem;
+  animation: fadeInDown 3s;
+}
+.description__button-container {
+  padding: 1rem;
+  margin: 1rem;
+}
+.description__button {
+  background-color: var(--button-color);
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  padding: 1rem;
+  text-decoration: none;
+}
+.description__button:hover {
+  background-color: rgb(23, 39, 34);
+  border: 3px solid rgb(52, 218, 182);
+}
+.cards {
+  display: flex;
+  margin: auto;
+  background-color: var(--theme-color-second);
+}
+.cards-container {
+  margin: 2rem 4rem;
+  display: grid;
+}
+.card-content-first {
+  background-color: var(--card-theme-color1);
+  padding: 1rem;
+}
+.card-content-second {
+  background-color: var(--card-theme-color2);
+  padding: 1rem;
+}
+.card-content-third {
+  background-color: var(--card-theme-color3);
+  padding: 1rem;
+}
+.card__icon-service-first,
+.card__icon-service-second,
+.card__icon-service-third {
+  border-left: 1px solid black;
+}
+.card__icon-service-container {
+  padding: 0;
+}
+.card__icon-service {
+  width: 60px;
+}
+.card__title {
+  margin: 0;
+}
+.card__description {
+  letter-spacing: 4px;
+}
+
+.Galery {
+  display: flex;
+}
+.Galery__sections-container {
+  padding: 1.5rem;
+}
+.Galery__title-container {
+  padding: 2rem;
+  text-align: center;
+}
+.Galery__title {
+  font-size: 2rem;
+  border-bottom: 1px solid rgb(39, 35, 35);
+}
+.Galery__products-container {
+  margin: 2rem 0;
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.Galery__product-content {
+  cursor: pointer;
+  width: 280px;
+  height: 450px;
+  padding: 1rem;
+  background: rgb(212, 207, 207);
+  border: 1px solid rgb(209, 205, 205);
+  border-radius: 2px;
+  transition: all 0.25s;
+  box-shadow: 12px 12px 2px 1px rgb(19, 94, 19);
+}
+
+.Galery__product-content:hover {
+  box-shadow: -12px 12px 2px -1px rgb(65, 158, 105);
+}
+.Galery__product-image-container {
+  width: 210px;
+}
+.Galery__product-image {
+  width: 220px;
+}
+.Galery__product-information {
+  padding-left: 2rem;
+}
+.Galery__product-name {
+  color: rgb(58, 77, 58);
+}
+.Galery__product-price {
+  color: rgb(42, 165, 134);
+}
+
+.newsletter {
+  margin: 2rem 0;
+  background-image: url(https://images-stylist.s3-eu-west-1.amazonaws.com/app/uploads/2020/10/08105727/autumn-plant-care-houseplants-winter-crop-1604833099-1920x1280.jpg);
+  background-repeat: no-repeat;
+}
+.newsletter__subscribe-container {
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin: 2rem;
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(131, 204, 131, 0.37);
+}
+.newsletter__title {
+  font-family: "Playfair Display SC", serif;
+  padding: 1rem 0;
+  font-size: 2rem;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.newsletter__subtitle {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+.newsletter-subscribe-form {
+  padding: 0;
+}
+.newsletter-subscribe__form-container {
+  padding: 1rem 0;
+}
+.newsletter__form-title {
+  font-size: 1rem;
+}
+.newsletter__form-box {
+  height: 2rem;
+  border-radius: 1rem;
+}
+
+.newsletter__form-button-container {
+  padding: 1rem;
+}
+.newsletter__form-button {
+  padding: 0.5rem;
+  background-color: rgb(135, 206, 158);
+  border-radius: 1rem;
+}
+.newsletter__form-button:hover {
+  background-color: var(--button-color);
+  color: beige;
+}
+.footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(163, 157, 157);
+}
+
+.footer__links-container {
+  display: flex;
+  justify-content: center;
+  padding: 2 0;
+  gap: 2.5rem;
+}
+.footer__link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.footer__link-image {
+  width: 30px;
+  transition: all 0.25s;
+  gap: 2rem;
+}
+
+.footer__link-image:hover {
+  transform: scale(1.5);
+}
+
+.rights {
+  color: var(--secondary-text-color);
+  font-weight: 800;
+}
+@media (min-width: 854px) {
+  .description-container {
+    background-image: url(https://cdn.shopify.com/s/files/1/0150/6262/articles/blog_the-sill_haworthia-succulent-zebra-plant_2_4_1200x.jpg?v=1565209437);
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    max-width: 1024px;
+    /* overflow: hidden; */
+  }
+  .description-background-section {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(242, 254, 243, 0.836) 0%,
+      rgba(0, 212, 255, 0) 100%
+    );
+  }
+  .description__title::after {
+    content: var(--title);
+    position: absolute;
+    top: 22%;
+    left: 32.2rem;
+    filter: blur(0.25rem);
+    transform: rotatex(120deg);
+  }
+  .cards {
+    /* margin: auto; */
+    background-color: var(--theme-color-second);
+  }
+  .cards-container {
+    margin: 2rem 4rem;
+    display: flex;
+  }
+  .Galery {
+    display: block;
+  }
+  .Galery__sections-container {
+    padding: 1.5rem;
+  }
+  .Galery__title-container {
+    padding: 2rem;
+    justify-content: center;
+  }
+  .Galery__title {
+    font-size: 2rem;
+    border-bottom: 1px solid rgb(39, 35, 35);
+  }
+  .Galery__products-container {
+    margin: 2rem;
+    /* position: static; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
