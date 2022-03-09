@@ -319,4 +319,58 @@
   color: var(--secondary-text-color);
   font-weight: 800;
 }
-
+@media (min-width: 854px) {
+  .description-container {
+    background-image: url(https://cdn.shopify.com/s/files/1/0150/6262/articles/blog_the-sill_haworthia-succulent-zebra-plant_2_4_1200x.jpg?v=1565209437);
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    max-width: 1024px;
+    /* overflow: hidden; */
+  }
+  .description-background-section {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(242, 254, 243, 0.836) 0%,
+      rgba(0, 212, 255, 0) 100%
+    );
+  }
+  .description__title::after {
+    content: var(--title);
+    position: absolute;
+    top: 22%;
+    left: 32.2rem;
+    filter: blur(0.25rem);
+    transform: rotatex(120deg);
+  }
+  .cards {
+    /* margin: auto; */
+    background-color: var(--theme-color-second);
+  }
+  .cards-container {
+    margin: 2rem 4rem;
+    display: flex;
+  }
+  .Galery {
+    display: block;
+  }
+  .Galery__sections-container {
+    padding: 1.5rem;
+  }
+  .Galery__title-container {
+    padding: 2rem;
+    justify-content: center;
+  }
+  .Galery__title {
+    font-size: 2rem;
+    border-bottom: 1px solid rgb(39, 35, 35);
+  }
+  .Galery__products-container {
+    margin: 2rem;
+    /* position: static; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
